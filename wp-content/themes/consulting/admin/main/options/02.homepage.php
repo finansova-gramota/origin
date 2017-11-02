@@ -188,19 +188,27 @@ $slider_default          = NULL;
 	 $buttons = '<div class="homepage-buttons"><button class="logo-capital">'. iconv(mb_detect_encoding("Ğàññ÷èòàòü êàïèòàë", mb_detect_order(), true), "UTF-8", "Ğàññ÷èòàòü êàïèòàë") .'</button>
 <button class="logo-career">'. iconv(mb_detect_encoding("Óçíàòü î êàğüåğå", mb_detect_order(), true), "UTF-8", "Óçíàòü î êàğüåğå") .'</button></div>';
 
+		$slideText1 = '<div class="text-on-slides">' . wpautop(get_post(800)->post_content) . '</div>';
+		$slideText2 = '<div class="text-on-slides">' . wpautop(get_post(806)->post_content) . '</div>';
+		$slideText3 = '<div class="text-on-slides">' . wpautop(get_post(813)->post_content) . '</div>';
+		$slideText4 = '<div class="text-on-slides">' . iconv(mb_detect_encoding("ÇÀĞÀÁÀÒÛÂÀÉÒÅ", mb_detect_order(), true), "UTF-8", "ÇÀĞÀÁÀÒÛÂÀÉÒÅ") . '</div>';
+		$slideText5 = '<div class="text-on-slides">' . iconv(mb_detect_encoding("ÑÎÕĞÀÍßÉÒÅ", mb_detect_order(), true), "UTF-8", "ÑÎÕĞÀÍßÉÒÅ") . '</div>';
+		$slideText6 = '<div class="text-on-slides">' . iconv(mb_detect_encoding("ÈÍÂÅÑÒÈĞÓÉÒÅ", mb_detect_order(), true), "UTF-8", "ÈÍÂÅÑÒÈĞÓÉÒÅ") . '</div>';
+
+
 
 		if(wp_is_mobile()){
 			// Set default slider
-			$slider_default .= '<li>'.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo1_mobile.png) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
-			$slider_default .= '<li>'.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo2_mobile.png) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
-			$slider_default .= '<li>'.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo3_mobile.png) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
+			$slider_default .= '<li>'.$slideText4.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo1_mobile.jpg) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
+			$slider_default .= '<li>'.$slideText5.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo2_mobile.jpg) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
+			$slider_default .= '<li>'.$slideText6.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo3_mobile.jpg) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
 
 		}
 		else{
 			// Set default slider
-			$slider_default .= '<li>'.$buttons.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo1.png) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
-			$slider_default .= '<li>'.$buttons.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo2.png) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
-			$slider_default .= '<li>'.$buttons.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo3.png) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
+			$slider_default .= '<li>'.$slideText2.$buttons.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo1.jpg) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
+			$slider_default .= '<li>'.$slideText1.$buttons.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo2.jpg) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
+			$slider_default .= '<li>'.$slideText3.$buttons.'<img src="' . esc_url( get_template_directory_uri() ) . '/images/transparent.png" style="background: url(' . esc_url( get_template_directory_uri() ) . '/images/slideshow/slide_demo3.jpg) no-repeat center; background-size: cover;" alt="' . esc_attr__( 'Demo Image', 'consulting' ) . '" /></li>';
 
 		}
 

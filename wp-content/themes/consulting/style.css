@@ -7268,6 +7268,22 @@ font-family: roboto;
 	letter-spacing: 5px;
 }
 
+.text-on-slides{
+	width: 40%;
+    	height: 30%;   
+    	position: absolute;
+   	 left: 7%;
+  	  top: 10%;
+  	  font-size: 20px;
+  	  line-height: 17px;
+  	  color: white;
+       text-align: left;
+}
+
+.text-on-slides strong{
+	font-size:24px;
+}
+
 .page #content{
 	padding: 0 10px 30px;
 }
@@ -7460,6 +7476,19 @@ header{
 		width:100px;
 		margin:0;		
 	}
+	.text-on-slides{
+		width: 50%;
+    		height: 30%;   
+    		position: absolute;
+   	 left: 5%;
+  	  top: 10%;
+  	  font-size: 20px;
+  	  line-height: 17px;
+  	  color: white;
+       text-align: left;
+}
+
+
 }
 
 @media only screen and (max-width: 1150px) {

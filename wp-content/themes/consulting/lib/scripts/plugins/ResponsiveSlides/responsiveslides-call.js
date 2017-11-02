@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
 
 	// Set transition time between slides
 	if ( ! jQuery( this ).closest( '.rslides-container' ).attr('data-speed') ) {
-		slideSpeed = 6000;
+		slideSpeed = 10000;
 	} else {
 		slideSpeed = jQuery( this ).closest( '.rslides-container' ).attr('data-speed')
 		
