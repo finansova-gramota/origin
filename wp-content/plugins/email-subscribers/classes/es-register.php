@@ -264,13 +264,15 @@ class es_cls_registerhook {
 		wp_register_script( 'es-widget', ES_URL . 'widget/es-widget.js', '', '', true );
 		wp_enqueue_script( 'es-widget' );
 		$es_select_params = array(
-			'es_email_notice'       => _x( 'Please enter email address', 'widget-enhanced-select', ES_TDOMAIN ),
-			'es_incorrect_email'    => _x( 'Please provide a valid email address', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_email_notice'       => _x( iconv(mb_detect_encoding("Пожалуйста введите", mb_detect_order(), true), "UTF-8", "Пожалуйста введите") . ' email', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_incorrect_email'    => _x( iconv(mb_detect_encoding("Пожалуйста введите корректный", mb_detect_order(), true), "UTF-8", "Пожалуйста введите корректный") . ' email address', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_load_more'          => _x( 'loading...', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_ajax_error'         => _x( 'Cannot create XMLHTTP instance', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_success_message'    => _x( 'Successfully Subscribed.', 'widget-enhanced-select', ES_TDOMAIN ),
-			'es_success_notice'     => _x( 'Your subscription was successful! Within a few minutes, kindly check the mail in your mailbox and confirm your subscription. If you can\'t see the mail in your mailbox, please check your spam folder.', 'widget-enhanced-select', ES_TDOMAIN ),
-			'es_email_exists'       => _x( 'Email Address already exists!', 'widget-enhanced-select', ES_TDOMAIN ),
+
+			'es_success_notice'     => _x( iconv(mb_detect_encoding("Ваша подписка прошла успешно! Через несколько минут проверьте почту в своем почтовом ящике и подтвердите подписку. Если вы не видите почту в своем почтовом ящике, проверьте папку со спамом", mb_detect_order(), true), "UTF-8", "Ваша подписка прошла успешно! Через несколько минут проверьте почту в своем почтовом ящике и подтвердите подписку. Если вы не видите почту в своем почтовом ящике, проверьте папку со спамом") , 'widget-enhanced-select', ES_TDOMAIN ),
+
+			'es_email_exists'       => _x( 'Email ' . iconv(mb_detect_encoding("уже существует в подписке", mb_detect_order(), true), "UTF-8", "уже существует в подписке") , 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_error'              => _x( 'Oops.. Unexpected error occurred.', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_invalid_email'      => _x( 'Invalid email address', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_try_later'          => _x( 'Please try after some time', 'widget-enhanced-select', ES_TDOMAIN ),
@@ -281,17 +283,19 @@ class es_cls_registerhook {
 		wp_register_script( 'es-widget-page', ES_URL . 'widget/es-widget-page.js', '', '', true );
 		wp_enqueue_script( 'es-widget-page' );
 		$es_select_params = array(
-			'es_email_notice'       => _x( 'Please enter email address', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_incorrect_email'    => _x( 'Please provide a valid email address', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_load_more'          => _x( 'loading...', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_ajax_error'         => _x( 'Cannot create XMLHTTP instance', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_success_message'    => _x( 'Successfully Subscribed.', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_success_notice'     => _x( 'Your subscription was successful! Within a few minutes, kindly check the mail in your mailbox and confirm your subscription. If you can\'t see the mail in your mailbox, please check your spam folder.', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_email_exists'       => _x( 'Email Address already exists!', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_error'              => _x( 'Oops.. Unexpected error occurred.', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_invalid_email'      => _x( 'Invalid email address', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_try_later'          => _x( 'Please try after some time', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_problem_request'    => _x( 'There was a problem with the request', 'widget-page-enhanced-select', ES_TDOMAIN )
+			'es_email_notice'       => _x( iconv(mb_detect_encoding("Пожалуйста введите", mb_detect_order(), true), "UTF-8", "Пожалуйста введите") . ' email', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_incorrect_email'    => _x( iconv(mb_detect_encoding("Пожалуйста введите корректный", mb_detect_order(), true), "UTF-8", "Пожалуйста введите корректный") . ' email address', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_load_more'          => _x( 'loading...', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_ajax_error'         => _x( 'Cannot create XMLHTTP instance', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_success_message'    => _x( 'Successfully Subscribed.', 'widget-enhanced-select', ES_TDOMAIN ),
+
+			'es_success_notice'     => _x( iconv(mb_detect_encoding("Ваша подписка прошла успешно! Через несколько минут проверьте почту в своем почтовом ящике и подтвердите подписку. Если вы не видите почту в своем почтовом ящике, проверьте папку со спамом", mb_detect_order(), true), "UTF-8", "Ваша подписка прошла успешно! Через несколько минут проверьте почту в своем почтовом ящике и подтвердите подписку. Если вы не видите почту в своем почтовом ящике, проверьте папку со спамом") , 'widget-enhanced-select', ES_TDOMAIN ),
+
+			'es_email_exists'       => _x( 'Email ' . iconv(mb_detect_encoding("уже существует в подписке", mb_detect_order(), true), "UTF-8", "уже существует в подписке") , 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_error'              => _x( 'Oops.. Unexpected error occurred.', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_invalid_email'      => _x( 'Invalid email address', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_try_later'          => _x( 'Please try after some time', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_problem_request'    => _x( 'There was a problem with the request', 'widget-enhanced-select', ES_TDOMAIN )
 		);
 		wp_localize_script( 'es-widget-page', 'es_widget_page_notices', $es_select_params );
 

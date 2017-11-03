@@ -16,7 +16,7 @@
 <meta property="og:image" itemprop="image" content="http://www.finansova-gramota.com.ua/wp-content/themes/consulting/images/Brain_256.png">
 <link rel="profile" href="//gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php esc_url( bloginfo( 'pingback_url' ) ); ?>" />
-<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic" rel="stylesheet">
 
 <?php wp_head(); ?>
 </head>

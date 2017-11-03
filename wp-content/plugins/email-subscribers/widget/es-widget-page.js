@@ -113,6 +113,7 @@ function eemail_submitresults(es_shortcode_form) {
 					es_msg.innerHTML = es_msg_text;
 					esSuccessEvent.detail.msg = es_msg_text;
 					es_shortcode_form.dispatchEvent(esSuccessEvent); // Trigger ES-Success Event
+					alert(es_msg_text);
 				}
 			}
 		} else {

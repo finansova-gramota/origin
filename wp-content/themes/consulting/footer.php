@@ -34,9 +34,9 @@
 				<div style="width:253px;">+38 099 617 29 30</div>
 				
 				<div>
-					<span style="margin-right: 5px; color: white"><b><?php echo __( 'NEWS', 'ultimatemember' ) ?></b></span>
-					<input type="text" placeholder="   e-mail" id="es_txt_email_pg" class="subscribe-email es_textbox_class" name="es_txt_email_pg" onkeypress="if(event.keyCode==13) es_submit_pages(event, 'http://localhost/wordpress')" value="" maxlength="225">
-					<input type="button" id="es_txt_button_pg" class="subscribe-button es_textbox_button es_submit_button" name="es_txt_button_pg" onclick="return es_submit_pages(event, 'http://localhost/wordpress')" value="<?php echo __( 'S U B S C R I B E', 'ultimatemember' )  ?>">
+					<span style="margin-right: 5px; color: white"><b><?php echo iconv(mb_detect_encoding("Новости", mb_detect_order(), true), "UTF-8", "Новости") ?></b></span>
+					<input type="text" placeholder="   e-mail" id="es_txt_email_pg" class="subscribe-email es_textbox_class" name="es_txt_email_pg" onkeypress="if(event.keyCode==13) es_submit_pages(event, 'http://www.finansova-gramota.com.ua')" value="" maxlength="225">
+					<input type="button" id="es_txt_button_pg" class="subscribe-button es_textbox_button es_submit_button" name="es_txt_button_pg" onclick="return es_submit_pages(event, 'http://www.finansova-gramota.com.ua')" value="<?php echo iconv(mb_detect_encoding("Подписаться", mb_detect_order(), true), "UTF-8", "Подписаться")  ?>">
 				</div>
 				
 				<div>
@@ -63,8 +63,8 @@
 				<div>
 					
 					<input type="text" placeholder="<?php echo iconv(mb_detect_encoding(" @ Новости", mb_detect_order(), true), "UTF-8", " @ Новости") ?>" 
-					id="es_txt_email_pg" class="subscribe-email es_textbox_class" name="es_txt_email_pg" onkeypress="if(event.keyCode==13) es_submit_pages(event, 'http://localhost/wordpress')" value="" maxlength="225">
-					<input type="button" id="es_txt_button_pg" class="subscribe-button es_textbox_button es_submit_button" name="es_txt_button_pg" onclick="return es_submit_pages(event, 'http://localhost/wordpress')"
+					id="es_txt_email_pg" class="subscribe-email es_textbox_class" name="es_txt_email_pg" onkeypress="if(event.keyCode==13) es_submit_pages(event, 'http://www.finansova-gramota.com.ua')" value="" maxlength="225">
+					<input type="button" id="es_txt_button_pg" class="subscribe-button es_textbox_button es_submit_button" name="es_txt_button_pg" onclick="return es_submit_pages(event, 'http://www.finansova-gramota.com.ua')"
 					 value="<?php echo iconv(mb_detect_encoding("Подписаться", mb_detect_order(), true), "UTF-8", "Подписаться")  ?>">
 					<a href="https://www.facebook.com/alex.prutyan" target="_blank" >
 					<img style="vertical-align: bottom" src="<?php echo get_template_directory_uri(); ?>/images/facebook-1174810_1920_50.png" />
