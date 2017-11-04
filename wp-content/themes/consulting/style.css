@@ -7437,7 +7437,7 @@ header{
 		padding: 5px 5px;
 	}
 	header{
-		height: 60px;
+		height: 80px;
 	}
 	.fingram-home{		
 		width:70%;
@@ -7506,6 +7506,13 @@ header{
 		display: block;
 	}
 
+	.alignright{
+		float: none;
+		margin-left: 0px;
+	}
+	.alignleft{
+		float: none;
+	}
 
 
 }
