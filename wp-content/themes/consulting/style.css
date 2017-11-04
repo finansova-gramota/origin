@@ -7513,6 +7513,15 @@ header{
 	.alignleft{
 		float: none;
 	}
+	.type-page ol li{
+		font-size: 17px;
+		color: black;
+	}
+	.type-page ul li{
+		font-size: 17px;
+		color: black;
+	}
+
 
 
 }
