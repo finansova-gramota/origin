@@ -18,7 +18,7 @@
 	<div id="homepage-return-button">
 		<a href ="<?php echo get_home_url(); ?>" >
 		<img src="<?php echo get_template_directory_uri(); ?>/images/arrow_50.png" />
-		<div>To Homepage</div>
+		<div><?php echo iconv(mb_detect_encoding("ÍÀ ÃËÀÂÍÓÞ", mb_detect_order(), true), "UTF-8", "ÍÀ ÃËÀÂÍÓÞ") ?></div>
 		</a>
 	</div>
 	<?php } ?>

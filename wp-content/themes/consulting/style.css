@@ -7258,6 +7258,11 @@ font-family: roboto;
 	left: 0;
 }
 
+#main-core .otbivka-mobile{
+	display: none;
+}
+
+
 .text-under-image{
 	position: relative;
 	height: 170px;
@@ -7432,7 +7437,7 @@ header{
 		padding: 5px 5px;
 	}
 	header{
-		height: 81px;
+		height: 60px;
 	}
 	.fingram-home{		
 		width:70%;
@@ -7477,7 +7482,7 @@ header{
 		text-transform: none;
 	}
 	.subscribe-button{
-		width:100px;
+		width:140px;
 		margin:0;		
 	}
 	.text-on-slides{
@@ -7489,8 +7494,18 @@ header{
   	  font-size: 20px;
   	  line-height: 17px;
   	  color: white;
-       text-align: left;
-}
+      	 text-align: left;
+	}
+	#main-core .otbivka{
+		display: none;
+	}
+
+	#main-core .otbivka-mobile{
+		position: absolute;
+		left: 0;
+		display: block;
+	}
+
 
 
 }
