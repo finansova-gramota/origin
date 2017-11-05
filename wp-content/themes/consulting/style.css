@@ -7437,12 +7437,12 @@ header{
 		padding: 5px 5px;
 	}
 	header{
-		height: 80px;
+		height: 60px;
 	}
 	.fingram-home{		
-		width:70%;
-		height:auto;
-		padding-bottom: 15px;
+		width: 190px;
+                height: 42px;
+		padding-top: 5px;
 	}
 	#site-header{
 		position: relative;
@@ -7464,7 +7464,9 @@ header{
 		padding: 0 10px;
 	}
 	.brain-mobile{
-		width: 60px;
+		width: 45px;
+                height: 55px;
+		float: left;
 	}
 	#from-author-home p{
 		text-align: inherit;
@@ -7521,7 +7523,9 @@ header{
 		font-size: 17px;
 		color: black;
 	}
-
+	#header-core{
+		text-align: center;
+	}
 
 
 }
