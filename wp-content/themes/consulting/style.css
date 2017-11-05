@@ -7438,20 +7438,26 @@ header{
 	}
 	header{
 		height: 60px;
+		border-bottom: 1px solid #EEE;
 	}
 	.fingram-home{		
 		width: 190px;
                 height: 42px;
-		padding-top: 5px;
+		padding-top: 10px;
 	}
 	#site-header{
 		position: relative;
+		height: 60px;
+
+	}
+	article p:first-child { 
+    		margin: 0px;
 	}
 	.text-under-image{
 		height: auto;
 		color: black;
 		text-align: center;
-		padding-top: 66px;
+		padding-top: 36%;
 	}
 	.alignleft{
 		float: inherit;

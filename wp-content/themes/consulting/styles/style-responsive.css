@@ -102,7 +102,7 @@
 	#header-responsive {
 		display: block;
 		width: 100%;
-		background: #292929;
+		background: lightsteelblue;
 		padding: 0 20px;
 	}
 	#header-responsive ul {
@@ -122,7 +122,7 @@
 		box-shadow: none;
 	}
 	#header-responsive li a {
-		color: #AAA;
+		color: black;
 		display: block;
 		border-bottom: 1px dotted #505050;
 		padding: 10px 20px;
