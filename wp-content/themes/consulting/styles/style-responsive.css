@@ -206,13 +206,13 @@
 	}
 	#header-responsive .menu-item-has-children > a:after {
 		font-family: fontawesome;
-		content: "\f067";
+		content: "\f107";
 		text-align: center;
-		font-size: 12px;
+		font-size: 15px;
 		z-index: 2;
 	}
 	#header-responsive .menu-item-has-children.sub-menu-show > a:after {
-		content: "\f068";
+		content: "\f106";
 	}
 	#header-responsive .sub-menu {
 		display: none;
