@@ -7087,7 +7087,7 @@ font-family: roboto;
 
 .type-page li{
 	font-family: roboto;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 300;
 }
 
@@ -7247,6 +7247,15 @@ font-family: roboto;
 	font-family: roboto;
 	font-size: 18px;
 	font-weight: 300;
+	color: black;
+}
+
+#main ul{
+	color: black;
+}
+
+#main ol{
+	color: black;
 }
 
 #container  > div:last-child{
