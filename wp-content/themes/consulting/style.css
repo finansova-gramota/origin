@@ -7195,6 +7195,7 @@ font-family: roboto;
 	top: 55%;
 	right: 10%;
 	position: absolute;
+	z-index: 10;
 }
 
 .subscribe-button{	
@@ -7217,6 +7218,7 @@ font-family: roboto;
 	font-size: 18px;
 	color: #4498e7;
 	display: table;
+	margin: 0 auto;
 }
 
 #news_subscribe div{
@@ -7425,6 +7427,11 @@ header{
 	padding-right: 30px;
 }
 
+#homepage-return-button img{
+	width: 80px;
+}
+
+
 #main-core p{
 	text-align: justify;
 }
@@ -7567,4 +7574,15 @@ header{
 	#site-header{
 		position: relative;
 	}
+}
+
+@media only screen and (max-width: 1300px) {
+	
+	#menu-item-123 {
+		display:none;   
+	}
+	#menu-item-691{
+		left: 20px; 
+	}
+	
 }

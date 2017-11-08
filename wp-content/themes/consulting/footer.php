@@ -17,7 +17,7 @@
 	<?php if(!is_home()){ ?>
 	<div id="homepage-return-button">
 		<a href ="<?php echo get_home_url(); ?>" >
-		<img src="<?php echo get_template_directory_uri(); ?>/images/arrow_50.png" />
+		<img src="<?php echo get_template_directory_uri(); ?>/images/home_icon.png" />
 		<div><?php echo iconv(mb_detect_encoding("ÍÀ ÃËÀÂÍÓÞ", mb_detect_order(), true), "UTF-8", "ÍÀ ÃËÀÂÍÓÞ") ?></div>
 		</a>
 	</div>
@@ -31,7 +31,7 @@
 			<div id="news_subscribe">
 				<div><img src="<?php echo get_template_directory_uri(); ?>/images/blue-2024619_1280_50.png" /></div>				
 				<div>+38 067 408 98 10</div>
-				<div style="width:253px;">+38 099 617 29 30</div>
+				<div>+38 099 617 29 30</div>
 				
 				<div>
 					<span style="margin-right: 5px; color: white"><b><?php echo iconv(mb_detect_encoding("Íîâîñòè", mb_detect_order(), true), "UTF-8", "Íîâîñòè") ?></b></span>
