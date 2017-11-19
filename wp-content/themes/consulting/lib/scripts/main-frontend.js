@@ -886,7 +886,7 @@ jQuery(document).ready(function (){
 	});
 	jQuery("#visit-seminar").click(function() {
 		jQuery('html, body').animate({
-			scrollTop: jQuery("#fill-seminar-request").offset().top - 200
+			scrollTop: jQuery("#fill-seminar-request").offset().top - 400
 		}, 1000);
 	});
 	jQuery("#to-visit-seminar").click(function() {

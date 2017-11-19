@@ -7202,7 +7202,7 @@ font-family: roboto;
 	background: #4498e7;
 	margin: 0 10px;
 	font-family: roboto;
-	text-transform: none;
+	text-transform: none!important;
 	font-weight: 300;
 	padding: 0!important;
 }
