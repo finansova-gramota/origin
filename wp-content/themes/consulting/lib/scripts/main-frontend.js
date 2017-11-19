@@ -815,46 +815,7 @@ jQuery(document).ready(function (){
 		var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
 		window.location = baseUrl + '/capital';
 	});
-	/* jQuery("#strakh-img-1").click(function(){
-		jQuery('#strakh-1').show();
-		jQuery('#strakh-2').hide();
-		jQuery('#strakh-3').hide();
-		jQuery('#strakh-4').hide();
-		jQuery('#strakh-5').hide();
-		scrollToProgram();
-	});
-	jQuery("#strakh-img-2").click(function(){
-		jQuery('#strakh-2').show();
-		jQuery('#strakh-1').hide();
-		jQuery('#strakh-3').hide();
-		jQuery('#strakh-4').hide();
-		jQuery('#strakh-5').hide();
-		scrollToProgram();
-	});
-	jQuery("#strakh-img-3").click(function(){
-		jQuery('#strakh-3').show();
-		jQuery('#strakh-2').hide();
-		jQuery('#strakh-1').hide();
-		jQuery('#strakh-4').hide();
-		jQuery('#strakh-5').hide();
-		scrollToProgram();
-	});
-	jQuery("#strakh-img-4").click(function(){
-		jQuery('#strakh-4').show();
-		jQuery('#strakh-2').hide();
-		jQuery('#strakh-3').hide();
-		jQuery('#strakh-1').hide();
-		jQuery('#strakh-5').hide();
-		scrollToProgram();
-	});
-	jQuery("#strakh-img-5").click(function(){
-		jQuery('#strakh-5').show();
-		jQuery('#strakh-2').hide();
-		jQuery('#strakh-3').hide();
-		jQuery('#strakh-4').hide();
-		jQuery('#strakh-1').hide();
-		scrollToProgram();
-	}); */
+
 	jQuery("#currency-switch").change(function(){
 		var thisvalue = jQuery(this).find("option:selected").text();
 		if(thisvalue == 'UAH (ГРАВЕ, МетЛайф)'){
@@ -899,36 +860,27 @@ jQuery(document).ready(function (){
 		var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
 		window.location = baseUrl + '/capital/';
 	});
-	
-	/* jQuery("#menu-item-448 a").click(function(e) {
-		jQuery('html, body').animate({
-			scrollTop: jQuery(".programs-example").offset().top - 230
-		}, 500);
-		e.preventDefault();
+
+	jQuery(".mobile-phone-call").click(function() {
+		jQuery('#phone-modal').show();
 	});
-	jQuery("#menu-item-449 a").click(function(e) {
-		jQuery('html, body').animate({
-			scrollTop: jQuery(".programs-example-2").offset().top - 180
-		}, 500);
-		e.preventDefault();
+
+	jQuery(".pm-close").click(function() {
+		jQuery('#phone-modal').hide();
 	});
-	jQuery("#menu-item-450 a").click(function(e) {
-		jQuery('html, body').animate({
-			scrollTop: jQuery(".programs-example-2").offset().top + 70
-		}, 500);
-		e.preventDefault();
-	}); */
+
+	jQuery("window").click(function() {
+		jQuery('#phone-modal').hide();
+	});
+
+
 	jQuery(".fin").hover(function() {
 		jQuery(this).css("color", "rgb(6, 70, 173)");
 		}, function(){
 		jQuery(this).css("color", "black");
 		});
 	jQuery('.blog-grid').eq(1).css('width','71%');   
-	
-	function scrollToProgram(){
-		jQuery('html, body').animate({
-			scrollTop: jQuery("#scroll-to").offset().top - 140
-		}, 300);
-	}
+
+
 });
 

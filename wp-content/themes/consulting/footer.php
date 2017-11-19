@@ -41,7 +41,7 @@
 				
 				<div>
 					<a href="https://www.facebook.com/SozdavaiteCapital" target="_blank" >
-					<img src="<?php echo get_template_directory_uri(); ?>/images/facebook-1174810_1920_50.png" />
+					<img class="facebook-footer" src="<?php echo get_template_directory_uri(); ?>/images/facebook-1174810_1920_50.png" />
 					</a>
 				</div>
 
@@ -56,9 +56,23 @@
 		<div id="sub-footer">
 
 			<div id="news_subscribe_mobile">
-				<div><img style="vertical-align: middle;"  src="<?php echo get_template_directory_uri(); ?>/images/blue-2024619_1280_50.png" />				
-				<span><a href="tel:+38 067 408 98 10">+38 067 408 98 10</a></span>
-				<div style="margin-left: 52px;"><a href="tel:+38 099 617 29 30">+38 099 617 29 30</a></div>
+				<div>
+					<img class="mobile-phone-call" style="vertical-align: middle;"  src="<?php echo get_template_directory_uri(); ?>/images/blue-2024619_1280_50.png" />
+					<a href="tel:+38 067 408 98 10">(067) 408 98 10  </a>
+					<a href="tel:+38 099 617 29 30">  (099) 617 29 30</a>
+				</div>
+
+				<!-- The Modal -->
+				<div id="phone-modal" class="phone-modal">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<p><?php echo iconv(mb_detect_encoding("Позвонить:", mb_detect_order(), true), "UTF-8", "Позвонить:") ?><span class="pm-close">&times;</span></p>
+						<p><a href="tel:+38 067 408 98 10">(067) 408 98 10</a></p>
+						<p><a href="tel:+38 099 617 29 30">(099) 617 29 30</a></p>
+					</div>
+
+				</div>
 				
 				<div>
 					
@@ -67,7 +81,7 @@
 					<input type="button" id="es_txt_button_pg" class="subscribe-button es_textbox_button es_submit_button" name="es_txt_button_pg" onclick="return es_submit_pages(event, 'https://finansova-gramota.com.ua')"
 					 value="<?php echo iconv(mb_detect_encoding("Подписаться", mb_detect_order(), true), "UTF-8", "Подписаться")  ?>">
 					<a href="https://www.facebook.com/SozdavaiteCapital/" target="_blank" >
-					<img style="vertical-align: bottom" src="<?php echo get_template_directory_uri(); ?>/images/facebook-1174810_1920_50.png" />
+					<img class="facebook-footer"  style="vertical-align: bottom" src="<?php echo get_template_directory_uri(); ?>/images/facebook-1174810_1920_50.png" />
 					</a>
 				</div>				
 
