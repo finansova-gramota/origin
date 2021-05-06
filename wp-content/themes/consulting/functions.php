@@ -255,3 +255,10 @@ function consulting_thinkup_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'consulting_thinkup_widgets_init' );
+
+function get_custom_translation() {
+
+    $content_post = get_post(1274);
+    $content = $content_post->post_content;
+    return explode('|', $content);
+}

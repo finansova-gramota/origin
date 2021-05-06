@@ -184,16 +184,17 @@ $slide_image             = NULL;
 $slider_default          = NULL;
 
 	if ( is_front_page() ) {
+		$translationsArr = get_custom_translation();
 
-	 $buttons = '<div class="homepage-buttons"><button class="logo-capital">'. iconv(mb_detect_encoding("Рассчитать капитал", mb_detect_order(), true), "UTF-8", "Рассчитать капитал") .'</button>
-<button class="logo-career">'. iconv(mb_detect_encoding("Узнать о карьере", mb_detect_order(), true), "UTF-8", "Узнать о карьере") .'</button></div>';
+	 $buttons = '<div class="homepage-buttons"><button class="logo-capital">' . $translationsArr[0] . '</button>
+				<button class="logo-career">' . $translationsArr[1] . '</button></div>';
 
 		$slideText1 = '<div class="text-on-slides">' . wpautop(get_post(800)->post_content) . '</div>';
 		$slideText2 = '<div class="text-on-slides">' . wpautop(get_post(806)->post_content) . '</div>';
 		$slideText3 = '<div class="text-on-slides">' . wpautop(get_post(813)->post_content) . '</div>';
-		$slideText4 = '<div class="text-on-slides">' . iconv(mb_detect_encoding("ЗАРАБАТЫВАЙТЕ", mb_detect_order(), true), "UTF-8", "ЗАРАБАТЫВАЙТЕ") . '</div>';
-		$slideText5 = '<div class="text-on-slides">' . iconv(mb_detect_encoding("СОХРАНЯЙТЕ", mb_detect_order(), true), "UTF-8", "СОХРАНЯЙТЕ") . '</div>';
-		$slideText6 = '<div class="text-on-slides">' . iconv(mb_detect_encoding("ИНВЕСТИРУЙТЕ", mb_detect_order(), true), "UTF-8", "ИНВЕСТИРУЙТЕ") . '</div>';
+		$slideText4 = '<div class="text-on-slides">' . $translationsArr[2] . '</div>';
+		$slideText5 = '<div class="text-on-slides">' . $translationsArr[3] . '</div>';
+		$slideText6 = '<div class="text-on-slides">' . $translationsArr[4] . '</div>';
 
 
 
@@ -224,13 +225,7 @@ $slider_default          = NULL;
 		if(wp_is_mobile()){
 
 			echo '';
-			echo "<div id='from-author-home'><p>".iconv(mb_detect_encoding("Для вас важно обеспечить финансовую защиту для себя и своей семьи? Рассчитайте необходимый капитал сейчас!<br>
-
-Ищете дополнительный доход, который может стать основным? Узнайте больше о карьере финансового консультанта!", mb_detect_order(), true)
-					
-					, "UTF-8", "Для вас важно обеспечить финансовую защиту для себя и своей семьи? Рассчитайте необходимый капитал сейчас!<br>
-
-Ищете дополнительный доход, который может стать основным? Узнайте больше о карьере финансового консультанта!")."</p></div>";
+			echo "<div id='from-author-home'><p>". $translationsArr[5] ."</p></div>";
 				
 			echo $buttons;		}
 //		if ( ( current_user_can( 'edit_theme_options' ) and empty( $thinkup_homepage_sliderswitch ) ) or $thinkup_homepage_sliderswitch == 'option1' ) {

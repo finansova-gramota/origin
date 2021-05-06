@@ -7,7 +7,9 @@
  * @package ThinkUpThemes
  */
 ?>
-
+<?php
+$translationsArr = get_custom_translation();
+?>
 		</div><!-- #main-core -->
 		</div><!-- #main -->
 		<?php /* Sidebar */ consulting_thinkup_sidebar_html(); ?>
@@ -18,7 +20,7 @@
 	<div id="homepage-return-button">
 		<a href ="<?php echo get_home_url(); ?>" >
 		<img src="<?php echo get_template_directory_uri(); ?>/images/home_icon.png" />
-		<div><?php echo iconv(mb_detect_encoding("НА ГЛАВНУЮ", mb_detect_order(), true), "UTF-8", "НА ГЛАВНУЮ") ?></div>
+		<div id="homepage-return-button-text"><?php echo $translationsArr[9] ?></div>
 		</a>
 	</div>
 	<?php } ?>
@@ -34,9 +36,9 @@
 				<div>+38 099 617 29 30</div>
 				
 				<div>
-					<span style="margin-right: 5px; color: white"><b><?php echo iconv(mb_detect_encoding("Новости", mb_detect_order(), true), "UTF-8", "Новости") ?></b></span>
+					<span style="margin-right: 5px; color: white"><b id="news_subscribe_news_text"><?php echo $translationsArr[10] ?></b></span>
 					<input type="text" placeholder="   e-mail" id="es_txt_email_pg" class="subscribe-email es_textbox_class" name="es_txt_email_pg" onkeypress="if(event.keyCode==13) es_submit_pages(event, 'https://finansova-gramota.com.ua')" value="" maxlength="225">
-					<input type="button" id="es_txt_button_pg" class="subscribe-button es_textbox_button es_submit_button" name="es_txt_button_pg" onclick="return es_submit_pages(event, 'https://finansova-gramota.com.ua')" value="<?php echo iconv(mb_detect_encoding("Подписаться", mb_detect_order(), true), "UTF-8", "Подписаться")  ?>">
+					<input type="button" id="es_txt_button_pg" class="subscribe-button es_textbox_button es_submit_button" name="es_txt_button_pg" onclick="return es_submit_pages(event, 'https://finansova-gramota.com.ua')" value="<?php echo $translationsArr[11]  ?>">
 				</div>
 				
 				<div>
@@ -67,7 +69,7 @@
 
 					<!-- Modal content -->
 					<div class="modal-content">
-						<p><?php echo iconv(mb_detect_encoding("Позвонить:", mb_detect_order(), true), "UTF-8", "Позвонить:") ?><span class="pm-close">&times;</span></p>
+						<p><?php echo $translationsArr[12] ?><span class="pm-close">&times;</span></p>
 						<p><a href="tel:+38 067 408 98 10">(067) 408 98 10</a></p>
 						<p><a href="tel:+38 099 617 29 30">(099) 617 29 30</a></p>
 					</div>
@@ -76,10 +78,10 @@
 				
 				<div>
 					
-					<input type="text" placeholder="<?php echo iconv(mb_detect_encoding(" @ Новости", mb_detect_order(), true), "UTF-8", " @ Новости") ?>" 
+					<input type="text" placeholder="<?php echo $translationsArr[7] ?>"
 					id="es_txt_email_pg" class="subscribe-email es_textbox_class" name="es_txt_email_pg" onkeypress="if(event.keyCode==13) es_submit_pages(event, 'https://finansova-gramota.com.ua')" value="" maxlength="225">
 					<input type="button" id="es_txt_button_pg" class="subscribe-button es_textbox_button es_submit_button" name="es_txt_button_pg" onclick="return es_submit_pages(event, 'https://finansova-gramota.com.ua')"
-					 value="<?php echo iconv(mb_detect_encoding("Подписаться", mb_detect_order(), true), "UTF-8", "Подписаться")  ?>">
+					 value="<?php echo $translationsArr[8]  ?>">
 					<a href="https://www.facebook.com/SozdavaiteCapital/" target="_blank" >
 					<img class="facebook-footer"  style="vertical-align: bottom" src="<?php echo get_template_directory_uri(); ?>/images/facebook-1174810_1920_50.png" />
 					</a>
